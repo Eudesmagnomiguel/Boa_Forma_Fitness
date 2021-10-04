@@ -1,0 +1,965 @@
+@charset 'utf-8';
+
+*{
+margin:0;
+padding: 0;
+font-family: "Roboto", sans-serif;
+border: none;
+outline: none;
+border-radius: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+p{hyphens: auto;}
+img{max-width: 100%;}
+html, body{height: 100%;}
+.bloco {min-width:100%;}
+
+/* Header*/
+
+
+/*=========== Cabecalho===================*/
+.cabecalho{width: 100%;
+float:left;
+}
+
+
+ .logo img, h1{
+width:100px;
+font-size: 0;
+float: left;
+margin: 2% 6%;
+}
+
+ .nav .btn-menu {
+    float: right;
+    margin: 5% 7%;
+
+}
+
+.nav .btn-menu i{
+    color: #fff;
+
+}
+
+
+/*============================ NAV ===============*/
+
+.nav
+ {
+width: 100%;
+height: 94px;
+position: fixed;
+background-color: transparent;
+top:0;
+left:0;
+z-index:999;
+box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+
+}
+
+/*========= Primeiro Section */
+
+
+
+
+/* ============= NAV-MOBILE ==============*/
+
+nav.sticky{background-color: #bebebe;
+transition: 1.1s;
+}
+
+
+.cabecalho .nav .nav-mobile{
+background-image: url('../img/textura2.png');
+position: fixed;
+width: 62%;
+height: 100%;
+max-width: 1000px;
+left:-100% ;
+}
+
+.cabecalho .nav .nav-mobile ul{
+width: 100%;
+float: left;
+}
+
+.cabecalho .nav-mobile ul li{
+line-height: 50px;
+text-transform: uppercase;}
+
+.cabecalho .nav-mobile ul li:hover{background-color: rgba(0,0,0,.5);}
+
+
+.cabecalho .nav-mobile ul li a{
+color: #fff;
+display: block;
+margin-left:30px;
+}
+/*========Home====*/
+
+.home{
+width: 100%;
+float:left;
+background-image: url("../img/bg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+animation: mudarbg 20s  infinite;
+min-height: 100%;
+/*padding:3%;
+height:94px;
+text-align:center;
+*/
+}
+
+
+/* banner TEXT */
+.home 
+.banner{
+    width: 100%;
+text-align: center;
+padding-top: 7em;
+}
+
+.banner p{font-size: 1em;
+line-height: 1.8em;
+color: #fff;}
+
+
+.home .banner h2{
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #fff;
+}
+    
+
+
+/*============ Home-Animation======*/
+
+@keyframes mudarbg{
+
+  
+40%{
+    background-image: url("../img/bg.jpg");}
+80%{  background-image: url("../img/bg2.jpg");}
+90%{  background-image: url("../img/bg3.jpg");}
+100%{  background-image: url("../img/bg.jpg");}
+}
+
+/*====================== BUTTONS ===================== */
+
+div.buttons{
+    width: 100%;
+    height: 100%;
+    margin-top:6%;
+
+}
+
+.buttons .btn-blue{
+    background-color: rgb(37, 182, 192);
+    color: white;
+    padding: 18px 23px;
+    text-transform: uppercase;
+    border-radius: 23px;
+}
+.buttons .btn-blue:hover{
+    background-color: white;
+    color: rgb(37, 182, 192);
+
+}
+
+.buttons .btn-white{
+    background-color: white;
+    color:rgb(7, 102, 190);
+    padding: 17px 23px;
+    text-transform: uppercase;
+    margin-left: 2%;
+    border-radius: 23px;
+}
+
+
+.buttons .btn-white:hover{
+    background-color: rgb(7, 102, 190);
+    color:rgb(255,255,255);
+   
+}
+
+
+
+.sobre{width: 100%;
+float: left;
+background-image: url('../img/textura1.png');
+}
+
+.sobre .sobre-container{
+width: 100%;
+float: left;
+}
+ h2{
+   font-size: 2em;
+   color:#212121;
+   text-align: center;
+   text-transform: uppercase;
+    }
+
+    h2::after{
+       display: block;
+       content: '';
+       border-top: 1px solid rgb(37, 182, 192);
+       width: 10%;
+       margin: 15px auto;
+         }
+
+         .sobre .sobre-container:hover h2::after{
+            width: 20%;
+            margin: 15px auto;
+              }
+
+.sobre-texto{
+width: 100%;
+float: left;
+margin-bottom: 3%;
+}
+.slide-grid-control{width: 100%;
+    float: left;
+    padding: 13% 8%;}
+.sobre .sobre-texto p{
+    line-height: 1.8em;
+    text-align: justify;
+    }
+
+    /*================ Slide =============*/
+
+    .slide-container{width: 100%;
+    height: 25vh;
+margin: auto;
+position: relative;
+overflow: hidden;
+}
+
+.slide-bloco{
+
+    position: absolute;
+    width: 500%;
+    height: 100%;
+    top:0;
+    left: 0;
+    float: left;
+    animation: blocos 9.2s linear infinite;
+}
+
+.slide-bloco .slide-img{ width: 20%;
+height: 100%;
+position: relative;
+float: left;}
+
+.slide-img img{
+width: 100%;
+height: 100%;}
+
+@keyframes blocos{
+0%{left: 0%;}
+25%{left: 0%;}
+30%{left: -100%;}
+45%{left: -100%;}
+55%{left: -200%;}
+75%{left: -200%;}
+80%{left: -300%;}
+85%{left: -300%;}
+95%{left: -300%;}
+99%{left: -400%;}
+100%{left: -400%;}
+}
+
+.missao-vv{
+    background-color: #23cdd6;
+    width: 100%;
+    float: left;
+}
+
+.missao-vv .controls-articles{
+    width: 100%;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+
+}
+
+.missao-vv .controls-articles .item{
+ width: 100%;
+ height: 100%;
+ padding: 3% 4%;
+ text-align: center;
+}
+
+.missao-vv .controls-articles .item .icon i{
+    color: #fff;
+    font-size: 4em;
+    margin-bottom: 6%;
+   }
+
+   .missao-vv .controls-articles .item h3{
+    color: #fff;
+    font-weight: 300;
+  font-size: 1.5em;
+  text-transform: uppercase;
+   }
+
+   .missao-vv .controls-articles .item p{
+    color: #fff;
+font-weight: 500;
+line-height: 1.2em;
+   }
+
+   /* ========  SERVICOS =================*/
+
+.servicos{ width: 100%;
+    float: left;
+background-image: url('../img/textura2.png');}
+
+.servico-container{
+width: 100%;
+float: left;
+ padding: 10% 8% 3%; 
+}
+
+.textoservicos{
+
+    width: 100%;
+    float: left;
+   /* margin-bottom: auto;*/
+}
+
+.textoservicos h2{
+  font-size: 2em;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+ 
+   .textoservicos h2::after{
+        display: block;
+        content: '';
+        border-top: 1px solid rgb(37, 182, 192);
+        width: 10%;
+        margin: 15px auto;
+          }
+ 
+         .textoservicos:hover h2::after{
+             width: 20%;
+             margin: 15px auto;
+               }
+
+
+         .textoservicos p{
+                line-height: 1.8em;
+                text-align: center;
+                color: #fff;
+                font-weight: 300;
+                }
+            
+
+                /* «««« PILATES «««««««*/
+.servico-bloco2{
+width: 100%;
+/*margin: auto;*/
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap:20px;
+}
+
+.servico-bloco2 .servico-artigo:hover{
+    cursor: pointer;
+
+    transition: 1.2s;
+
+    transform:translateY(-18px);
+}
+
+.servico-artigo{
+
+    background-color: #fff;
+}
+
+.card-content{
+
+    padding: 15px;
+}
+
+
+.card-content h3{
+font-size: 1.5em;
+margin-bottom: 4%;
+color: #bebebe;
+}
+.card-content{
+    line-height: 1.5em;
+}
+
+/*  ======== BOTAO HORARIO =========== */
+
+.horario{
+    width: 100%;
+     text-align: center;
+ 
+
+}
+
+.horario .btn-horario{
+background-color: #2dc7d0;
+font-size: 1em;
+display: inline-flex;
+height: 50px;
+margin-top: 1%;
+border-radius: 13px;
+cursor: pointer;
+}
+
+.btn-horario:hover {
+    background-color: #bebebe;
+}
+
+
+.horario .btn-horario .btn-icons, .btn-texto{
+display: inline-flex;
+align-items: center;
+padding: 0  20px;
+color:#fefefe ;
+
+}
+
+.btn-icons{ margin-right: -30px;}
+
+/* Unidades Container */
+.unidades-container{
+    width: 100%;
+    padding: 9% 8%;
+   }
+   .unidade-bloco2{
+    width: 100%;
+    display: grid;
+   grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+   }
+
+
+/*============ UNIDADES ===========*/
+
+.unidades {
+background-image: url('../img/bg-unidades.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+float: left;
+width: 100%;
+}
+
+
+/*========= UNIDADES TEXTOS =======*/
+.unidade-texto{margin-top: 3%;
+margin-bottom: 3%;}
+.unidade-texto h2{
+    color: #fff;
+}
+.unidade-texto p{
+     font-size: 1.2em;
+     text-align: center;
+    color: #fff;
+}
+/* MEDIA SCREEN  FIRST MOBILE*/
+@media only screen and (max-width:480px) {
+    
+    .imagem1 {display: none;}
+}
+
+@media only screen and (min-width:425px){
+
+
+    .slide-container{
+        height: 35vh;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:601px){
+
+
+ .banner{ padding-top: 10em;}
+
+#home h2{
+     font-size: 3.8em;
+font-weight: 600;
+}    
+
+#home p{
+    font-size: 1.3em;
+}
+
+
+.slide-container{ height: 45vh;}
+
+
+
+
+/*============ MISSAO VISAO VALORE== */
+.missao-vv .controls-articles{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+
+}
+
+/* =============== SERVICOS ========= */
+.servico-bloco2{
+                    width: 100%;
+                    /*margin: auto;*/
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap:20px;
+}
+
+.servico-artigo h3{
+    font-size: 2.1em;
+}
+
+
+/* Contacto */
+
+
+
+
+}
+
+
+@media only screen and (min-width:750px){
+
+
+    /*========= Altura do SLIDE ========*/
+.slide-container{
+    height: 55vh;
+}
+  
+
+
+.contato-bloco{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    float: left;
+ 
+    }
+    
+    .contato-mapa{display: none;}
+
+}
+
+
+
+   /*================ Final MOBILE  FIRST ============= */
+
+   /*============== UNIDADES BLOCOS 2 ============*/
+  
+   .unidades-artigos{
+float: left;
+background-color: #fff;
+width: 100%;
+
+   }
+
+   .imagem1{
+       float: left;
+       height: 100%;
+       margin-right:20px ;
+   }
+
+   .imagem1 img{
+width: 100%;
+height: 100%;}
+
+.artigos{padding: 35px;
+color: #212121;}
+
+.artigos i{
+color: #212121;
+vertical-align: middle;
+}
+
+.artigos h3{
+    font-size: 1.6em;
+    line-height: 2em;
+}
+
+
+
+/* SECTION CONTACTO */
+
+.contato{
+    width: 100%;
+    float: left;
+    background-image: url('../img/textura1.png');
+    box-sizing: border-box;
+    float: left;
+}
+.contato h4{ 
+    color: #fff;
+font-weight: 900;
+font-size: 1.2em;
+text-transform: uppercase;
+line-height: 1.8em;
+}
+
+.contato-container{
+    float: left;
+    padding: 10% 8%;
+    width: 100%;
+}
+
+
+.contato-mapa{
+
+  
+    min-width: 94px;
+
+}
+.contato-mapa iframe{
+width: 100%;
+border: none;
+    min-width: 94px;
+
+}
+
+
+.contato-bloco{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+float: left;
+width: 100%;
+
+}
+.contato-col2{
+
+    background-image: url('../img/textura2.png');
+    min-height: 500px;
+    padding: 30px;
+
+}
+.contato-col2 p{color: #fff;}
+
+.contato-col2 h2{color: #fff;}
+
+.contato-col2 button{background-color: #23cdd6;
+width: 50px;
+height: 50px;
+border-radius: 50px;
+margin: 4% 0 4% 0;
+}
+
+.contato-col2 i, a {
+    color: #fff;
+    font-size: 1em;
+    }
+
+    .contato-form{
+        background-color: #e3edee;
+  color: #212121;
+  min-height: 500px;
+  padding: 30px;
+
+    }
+
+    .contato-form h4{
+        color: #212121;
+          }
+          .contato-form p{
+            color: #212121;
+             line-height: 1.8em;
+           margin-bottom: 10%;
+              }
+
+              .contato-form .input-field{
+                  width: 100%;
+                  height: 60px;
+                  position: relative;
+         
+                  }
+
+                  .input-field .inputbox{
+                    width: 100%;
+                    height:100%;
+                    border: none;
+                    background: none;
+                      border-bottom: 1px solid silver;
+                      font-size: 17px;
+                }
+
+                /* ANimation DOS OBJECTOS DO FORM */
+                .input-field .inputbox:focus ~ label{
+
+                    transform: translateY(-30px);
+                    font-size: 15px;
+                    color: #23cdd6;
+
+                }
+
+                .input-field label{
+           position: absolute;
+           left: 0;
+           bottom: 10px;
+           color: silver;
+           transition: .3s;
+                }
+
+                .input-field .line{
+                    position: absolute;
+                    width: 100%;
+                    bottom: 2%;
+                    height: 3px;
+                    background-color: #23cdd6;
+                    transform: scaleX(0);
+                }
+.input-field .inputbox:focus ~ .line{
+transition: .3s;
+transform: scaleX(1);
+
+}
+
+
+.point{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 115, 0);
+    border: 2px solid #fff;
+    position: absolute;
+border-radius: 50%;
+bottom: 300px;
+right:  0;
+margin: 3%;
+animation: point 4.2s alternate infinite;
+}
+
+@keyframes point{
+    0%{background-color: rgb(255, 115, 0);}
+    50%{background-color: #bebebe;}
+    60%{background-color: #fff;
+        border: 2px solid #000;}
+
+    100%{background-color: #212121;}
+
+}
+
+.textarea {
+    margin-top: 6%;
+    max-height: 46px;
+    max-width: 400px;  
+}
+
+
+
+/* FINAL animation */
+
+.buttonsend{
+    background-color: #23cdd6;
+    padding: 10px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 6%;
+    cursor: pointer;
+ color: #fff;
+}
+/* Final da Section Contacto */
+
+/* ===== Depoimentos ==============*/
+.depoimento{
+width: 100%;
+float: left;
+background-color: #23cdd6;
+}
+
+.depo-container{
+
+    width: 100%;
+    float: left;
+    padding: 2% 8%;
+}
+
+.depo-bloco{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    float: left;
+    gap: 20px;
+    text-align: center;
+
+}
+
+#depoimento{
+
+    color: #fff;
+}
+
+.depo-bloco img{
+
+    width: 100px;
+    border-radius: 50%;
+}
+.depo-bloco p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.depo-bloco h4{
+color: #fff;
+font-weight: 900;
+font-size: 1.2em;
+}
+
+.depo-bloco i{
+   
+    color: #fff;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-width:993px){
+
+    .point{
+       display: none;
+    }
+
+    /* Depoimentos */
+
+.depo-bloco{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ 
+}
+
+    /* Final depoimentos */
+/*=========== NAV =============*/
+
+.cabecalho .btn-menu{display: none;}
+
+.cabecalho .logo img, h1{
+margin: 1% 6%;
+}
+
+
+/*=======Menu Desktop*/
+.cabecalho  .nav .nav-mobile{
+position: static;
+display: block;
+height: 50px;
+float: right;
+background-image: none;
+margin: 0 7%;
+}
+
+.cabecalho .nav-mobile ul{
+    position: static;
+    display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.cabecalho .nav-mobile ul li:hover{
+
+    background-color: transparent;
+}
+
+.cabecalho .nav-mobile ul li a{
+position: relative;
+margin: 0 15px;
+color: #fff;
+font-weight: 400;
+transition: color 0.2s;
+
+}
+
+.cabecalho .nav-mobile ul li a:hover{
+    color: #2dc7d0;
+}
+
+    .servico-bloco2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+    }
+    .slide-grid-control { display: grid;
+        grid-template-columns: repeat(2,1fr);
+    padding: 1%;
+}
+
+
+        .banner h2{font-size: 4.3em;}
+  .banner p{text-align: center;}
+        .sobre-container{padding: 9% 8%;}
+
+
+      
+
+        .unidade-bloco2{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+           }
+            .unidades-artigos:hover{
+                transition: 1.2s;
+                transform: translateY(-14px);
+                cursor: pointer;
+            }
+
+
+            .contato-bloco{display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        gap: 20px;}
+
+            .contato-mapa{
+                display: block;
+            }
+
+
+   }
+
+   /* Rodape */
+
+   .rodape{
+       width: 100%;
+       float: left;
+background-image: url('../img/bg-rodape.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
+position: relative;
+
+}
+
+.rodape-container{
+    width: 100%;
+    text-align: center;
+}
+
+.rodape-container img{
+    width: 100px;
+
+}
+
+.rodape-container p{
+ font-size: 1.2em;
+    color: #fff;
+}
+
+#designed{
+ 
+    font-size: .7em;
+    float: left;
+    position: absolute;
+    top: 0;
+}
